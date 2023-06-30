@@ -1,0 +1,100 @@
+*{
+  font-family:'Poppins', sans-serif;
+  background-color:navy;
+  width:100%;
+  /* height:fit-content; */
+}
+
+header{
+  text-align:center;
+}
+
+.solarsystem{
+  display:flex;
+  text-align:center;
+}
+
+@keyframes rotation {
+  from {
+        transform: rotate(0deg)
+                   translate(var(--translate))
+                   rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+                   translate(var(--translate)) 
+                   rotate(-360deg);
+    }
+}
+
+#mercury {
+  --translate:-55px;
+  animation: rotation 4s linear infinite;
+}
+
+#mars {
+   --translate: -95px;
+  animation: rotation 5s -1s linear infinite;
+}
+
+#saturn {
+   --translate: -115px;
+  animation: rotation 8s -3s linear infinite;
+}
+
+#venus{
+  --translate: -75px;
+  animation: rotation 3s linear infinite;
+}
+
+#jupiter{
+  --translate: -135px;
+  animation: rotation 12s -2s linear infinite;
+}
+
+#saturn{
+  --translate: -155px;
+  animation:rotation 20s linear infinite;
+}
+
+#uranus{
+  --translate: -180px;
+  animation:rotation 25s -4s linear infinite;
+}
+
+#neptune{
+  --translate: -205px;
+  animation: rotation 23s linear infinite;
+}
+
+#pluto{
+  --translate: -240px;
+  animation: rotation 31s linear infinite;
+}
+
+/* #orbit1 {
+  stroke: black;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-dasharray: 0;
+  height:55px;
+  width:55px;
+}
+
+#orbit2 {
+  stroke: black;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-dasharray: 0;
+  height:75px;
+  width:75px;
+}
+
+#orbit3 {
+  stroke: black;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-dasharray: 0;
+  height:95px;
+  width:95px;
+} */
